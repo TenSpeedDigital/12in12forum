@@ -22,3 +22,9 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+
+In caew you forget
+
+Take the css and sprockets out of the applications.css.scss
+and remove the gem from the gemfile
+rename application.css.scss. back to .css
