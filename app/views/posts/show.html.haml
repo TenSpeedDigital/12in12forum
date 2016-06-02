@@ -1,7 +1,9 @@
-%hl= @post.title
-%p= @post.content
+#post_content
+    %hl= @post.title
+    %p= @post.content
 
-= link_to "Edit", edit_post_path(@post)
-= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want do do this?"}
+    #buttons
+        = link_to "Edit", edit_post_path(@post)
+        = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want do do this?"}
 
-= link_to "Home", root_path
+        = link_to "Home", root_path
