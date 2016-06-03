@@ -1,6 +1,13 @@
 #post_content
     %hl= @post.title
     %p= @post.content
+    
+    #comments
+        %h2= @post.comments.count
+        = render @post.comments
+        
+        %h3 Reply to thread
+        = render "comments/form"
 
     #buttons
         = link_to "Edit", edit_post_path(@post)
